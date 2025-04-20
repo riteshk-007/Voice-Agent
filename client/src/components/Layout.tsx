@@ -1,6 +1,13 @@
 import React from "react";
 import { Outlet, Link, useLocation } from "react-router-dom";
-import { Users, Calendar, Briefcase, Mic, LayoutDashboard } from "lucide-react";
+import {
+  Users,
+  Calendar,
+  Briefcase,
+  Mic,
+  LayoutDashboard,
+  FileText,
+} from "lucide-react";
 import { motion } from "framer-motion";
 
 const Layout: React.FC = () => {
@@ -23,6 +30,11 @@ const Layout: React.FC = () => {
       path: "/voice-simulation",
       icon: <Mic size={20} />,
       label: "Voice Simulation",
+    },
+    {
+      path: "/documentation",
+      icon: <FileText size={20} />,
+      label: "Documentation",
     },
   ];
 

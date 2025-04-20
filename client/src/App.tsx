@@ -7,6 +7,7 @@ import JobsPage from "@/pages/Jobs";
 import CandidatesPage from "@/pages/Candidates";
 import AppointmentsPage from "@/pages/Appointments";
 import VoiceSimulationPage from "@/pages/VoiceSimulation";
+import DocumentationPage from "@/pages/Documentation";
 import Layout from "@/components/Layout";
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
           <Route path="candidates" element={<CandidatesPage />} />
           <Route path="appointments" element={<AppointmentsPage />} />
           <Route path="voice-simulation" element={<VoiceSimulationPage />} />
+          <Route path="documentation" element={<DocumentationPage />} />
         </Route>
       </Routes>
       <Toaster />
